@@ -350,7 +350,7 @@ MonoBehaviour:
   uIManager: {fileID: 1780771701}
   speedModifier: 20
   forwardSpeed: 10
-  cam: {fileID: 963194225}
+  cam: {fileID: 1051806873}
   vectorForward: {fileID: 374398731}
   vectorBack: {fileID: 541150040}
   FractureItems:
