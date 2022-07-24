@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class Bounds : MonoBehaviour
 {
-    public Transform vectorback;
-    public Transform vectorforward;
-    public Transform vectorleft;
-    public Transform vectorright;
+    public Transform vectorBack;
+    public Transform vectorForward;
+    public Transform vectorLeft;
+    public Transform vectorRight;
 
     public void LateUpdate()
     {
         Vector3 viewPos = transform.position;
-        viewPos.z = Mathf.Clamp(viewPos.z, vectorback.transform.position.z, vectorforward.transform.position.z);
-        viewPos.x = Mathf.Clamp(viewPos.x, vectorleft.transform.position.x, vectorright.transform.position.x);
+        viewPos.z = Mathf.Clamp(viewPos.z, vectorBack.transform.position.z, vectorForward.transform.position.z);
+        viewPos.x = Mathf.Clamp(viewPos.x, vectorLeft.transform.position.x, vectorRight.transform.position.x);
         transform.position = viewPos;
     }
 }
