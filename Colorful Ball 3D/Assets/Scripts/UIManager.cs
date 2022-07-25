@@ -7,6 +7,22 @@ public class UIManager : MonoBehaviour
 {
     public Image whiteEffectImage;
     private int effectControl;
+    public GameObject settingsOpen;
+    public GameObject settingsClose;
+
+
+
+    public Animator layoutAnimator;
+
+    public void LayoutSettingsOpen()
+    {
+        layoutAnimator.SetTrigger("Slide_in");
+    }
+
+    public void LayoutSettingsClose()
+    {
+        layoutAnimator.SetTrigger("Slide_out");
+    }
 
     public IEnumerator WhiteEffect()
     {
