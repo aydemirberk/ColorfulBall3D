@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     public UIManager uIManager;
     private Rigidbody playerRb;
     private Touch touch;
-    [Range(20,40)]
+    [Range(10,40)]
     public int speedModifier;
     public int forwardSpeed;
     public GameObject cam;
